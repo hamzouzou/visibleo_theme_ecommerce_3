@@ -44,7 +44,7 @@ flag_pages:
 	            <!-- ########## 3 - CREATE PAIEMENT ################ -->
 	            {% assign gateway_name = gateway.name %}
 	            {%  assign link =  visibleo_gateway_payment.create_payment  %}
-	            {{ gateway.cover  | theme_image_tag}}
+	            <img src="{{ gateway.cover | resize: '100x'}}" />
 	        </li>
 	        {% endfor %}
 		</ul>
